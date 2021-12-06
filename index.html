@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>knowfarm</title>
+</head>
+<body>
+    <div id="main_container">
+        <div id="topnav">
+            <a href="#" style="font-weight: bold;">KNOWFARM</a>
+            <a class="active" href="#">Home</a>
+            <a href="#welcome">About</a>
+            <a href="#jump_galer">Galery</a>
+            <a href="#jump_discus">Discussion</a>
+            <div class="search_topnav">
+              <form action="#">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit" style="border: none;padding-top: 10px;padding-bottom: 10px;">search</button>
+              </form>
+              <a href="#" class="login" onclick="openfulllogin()">Log in</a>
+              <a href="#" class="signup">sign up</a>
+            </div>
+        </div>
+
+
+        <div class="login_bar" id="loginbar">
+            <!-- <img src="image/yosiga.jpg" id="fullwes"> -->
+            
+            <form action="#" class="form" id="login_form">
+                <h2 style="text-align: center;">Log in</h2>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <span onclick="closefulllogin()">X</span>
+        </div>
+
+
+        <a id="welcoming"></a>
+        <div id="parralax" >
+            <div id="judul" class="par" ><a href="#" >KNOWFARM</a></div>
+        </div>
+        <div class="welcome" id="welcome">
+
+            <div class="welcome-col01">
+                
+                <h1>SELAMAT DATANG DI KNOWFARM</h1>
+                <h3>your own Creative farming ideas</h3>
+                <br>
+                <div class="welcome-text">
+                    <p>Halo! Kami merupakan penyedia layanan desan grafis,animasi 2D, dan videografi yang menaungi DesainerVisual.id dan Dividio.in yang berbasis di Jember,Jawa Timur. Kami telah berpengalaman melayani berbagai klien baik individu, UMKM maupun institusi</p>
+                    <br>
+                    <p>Devemind bekerja secara kreatif, flesible,dan ketelatenan untuk menghsilkan produk yang unik dan mengesankan. Jika sewaktu waktu anda telah siap, hubungi kami agar dapat berkonsultasi gratis untuk merealisasikan ide anda.</p>
+                </div>
+                    
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray;margin-top: 30px;">
+                <ul>
+                    <li><a href="#" style="font-size: 17px;">Learn more about us!</a></li>
+                    <li><a href="#" style="font-size: 17px;">Contact us!</a></li>
+                </ul>
+            </div>
+
+            <div class="welcome-col02">
+                <h1>CHECK OUT OUR FARMING VIDEO</h1>
+                <h3>just press play</h3>
+                <div class="iframe-container">
+                    <iframe src="https://youtu.be/kXYiU_JCYtU?list=RDGMEM6ijAnFTG9nX1G-kbWBUCJAVMlvs68OKOquM" height="250" width="425" class="iframe-video"></iframe>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container-image-galery">
+            <div class="image-galery-title">
+                <h1><a style="margin-right: 10px;">Farm</a><a style="color: #1cc733;">Galery</a> </h1> 
+            </div>
+            <a id="jump_galer"></a>
+            <div class="full-image" id="fullimagebox">
+                <img src="image/yosiga.jpg" id="fullimage">
+                <span onclick="closefullimage()">X</span>
+            </div>
+
+            <div class="image-galery">
+                <div class="galery-row">
+                    <a class="image-galery-link">
+                        <div class="image-galery-img">
+                            <img onclick="openfullimage(this.src)" src="image baru/1.jpg" class="image-galery-this">
+                        </div>
+                    </a>
+                    <a  class="image-galery-link">
+                        <div class="image-galery-img">
+                            <img onclick="openfullimage(this.src)" src="image baru/5.jpg" class="image-galery-this">
+                        </div>
+                    </a>
+                    <a  class="image-galery-link">
+                        <div class="image-galery-img">
+                            <img onclick="openfullimage(this.src)" src="image baru/3.jpg" class="image-galery-this">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="galery-row">
+                    <a class="image-galery-link">
+                        <div class="image-galery-img">
+                            <img onclick="openfullimage(this.src)" src="image baru/4.jpg" class="image-galery-this">
+                        </div>
+                    </a>
+                    <a  class="image-galery-link">
+                        <div class="image-galery-img">
+                            <img style="width: 300px;" onclick="openfullimage(this.src)" src="image baru/7.jpg" class="image-galery-this">
+                        </div>
+                    </a>
+                    <a  class="image-galery-link">
+                        <div class="image-galery-img">
+                            <img style="height: 190px;width: 300px;" onclick="openfullimage(this.src)" src="image baru/6.jpg" class="image-galery-this">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <a id="jump_discus"></a>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">question</a></li>
+                    <li><a href="#">tag</a></li>
+                    <li><a href="#">category</a></li>
+                </ul>
+            </nav>
+            <article>
+                <div id="question_content">
+                    <h1 id="jdl_ques">THIS IS QUESTION</h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, ex dolore! Aliquam soluta illo fugiat perspiciatis at voluptatem eligendi numquam nam harum expedita est, exercitationem, quaerat error dolore, 
+                    tempora necessitatibus?</p>
+                </div>
+                <div id="addtext">
+                    <form>
+                        <label for="namanya">Username</label><br>
+                        <input type="text" name="name" id="namanya" value="name..."><br>
+                        <label for="textnya">reply</label><br>
+                        <input type="text" name="reply" id="textnya" value="reply..."><br>
+                        <label for="description">your answer</label><br>
+                        <textarea rows = "5" cols = "60" name = "description" id="opinion">
+                        Enter details here...
+                        </textarea>
+                    </form>
+                    <button onclick=addtext()>click</button>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <div id="foot_text">
+                <a href="#">@copyright by sister</a>
+            </div>
+        </footer>
+    </div>
+    <!-- <footer>
+       
+    </footer> -->
+    
+</body>
+<script src="java.js"></script>
+</html>
